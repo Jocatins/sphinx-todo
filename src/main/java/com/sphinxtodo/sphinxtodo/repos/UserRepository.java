@@ -1,4 +1,7 @@
 package com.sphinxtodo.sphinxtodo.repos;
 
-public interface UserRepository {
+import com.sphinxtodo.sphinxtodo.models.Users;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<Users, Long> {
 }
